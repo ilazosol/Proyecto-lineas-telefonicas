@@ -46,4 +46,16 @@ public class LineaMovilEntity implements Serializable {
             uniqueConstraints = {@UniqueConstraint(columnNames = { "linea_movil_id", "oferta_id" })}
     )
     private List<OfertaEntity> ofertas;
+
+    @Override
+    public String toString() {
+        return "LineaMovilEntity{" +
+                "idLineaMovil=" + idLineaMovil +
+                ", numeroTelefono=" + numeroTelefono +
+                ", estado='" + estado + '\'' +
+                ", tipoLinea='" + tipoLinea + '\'' +
+                ", nombrePlan='" + nombrePlan + '\'' +
+                ", cliente=" + cliente +
+                '}';
+    }
 }

@@ -36,4 +36,16 @@ public class ClienteEntity implements Serializable {
 
     @OneToMany(mappedBy = "cliente")
     private List<LineaMovilEntity> lineas;
+
+    @Override
+    public String toString() {
+        return "ClienteEntity{" +
+                "idCliente=" + idCliente +
+                ", nombre='" + nombre + '\'' +
+                ", apellidoPaterno='" + apellidoPaterno + '\'' +
+                ", apellidoMaterno='" + apellidoMaterno + '\'' +
+                ", tipoDocumento='" + tipoDocumento + '\'' +
+                ", numeroDocumento='" + numeroDocumento + '\'' +
+                '}';
+    }
 }
