@@ -5,7 +5,9 @@ import com.telefonica.linea.app.lineasclientes.entity.LineaMovilEntity;
 import com.telefonica.linea.app.lineasclientes.entity.OfertaEntity;
 import com.telefonica.linea.app.lineasclientes.exception.ResourceNotFoundException;
 import com.telefonica.linea.app.lineasclientes.repository.ClienteRepository;
+import com.telefonica.linea.app.lineasclientes.repository.ClienteRepositoryJDBC;
 import com.telefonica.linea.app.lineasclientes.repository.OfertaRepository;
+import com.telefonica.linea.app.lineasclientes.repository.conn.ConexionJDBC;
 import com.telefonica.linea.app.lineasclientes.service.IClienteService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,6 +15,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -25,15 +29,27 @@ public class ClientServiceImpl implements IClienteService {
 
     Logger log = LogManager.getLogger(ClientServiceImpl.class);
 
+    Connection connection = null;
+
     @Autowired
     private ClienteRepository clienteRepository;
 
     @Autowired
     private OfertaRepository ofertaRepository;
 
+    @Autowired
+    private ClienteRepositoryJDBC clienteRepositoryJDBC;
+
     @Override
     public List<ClienteEntity> findClients() {
         return clienteRepository.findAll();
+    }
+
+    @Override
+    public List<ClienteEntity> findAllClientsJDBC() throws Exception {
+        connection = ConexionJDBC.conectarMySQLDB();
+        List<ClienteEntity> clientes = clienteRepositoryJDBC.listarClientesJDBC(connection);
+        return clientes;
     }
 
     //Se listan todos los clientes con los filtros necesarios en el query de tipo y numero

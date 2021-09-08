@@ -24,6 +24,11 @@ public class ClienteController {
         return clienteService.findClients();
     }
 
+    @GetMapping("/findClientesJDBC")
+    public List<ClienteEntity> getAllClientsJDBC() throws Exception{
+        return clienteService.findAllClientsJDBC();
+    }
+
     @GetMapping("/findByDocument/{tipo}/{numero}")
     public ClienteEntity getClientByDocument(@PathVariable String tipo, @PathVariable String numero) throws ResourceNotFoundException {
         return clienteService.findClientByDocument(tipo,numero);
