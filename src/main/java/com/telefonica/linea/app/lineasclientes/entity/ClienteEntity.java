@@ -31,7 +31,7 @@ public class ClienteEntity implements Serializable {
     @Column(name="tipo_documento")
     private String tipoDocumento;
 
-    @Column(name="numero_documento")
+    @Column(name="numero_documento",unique = true)
     private String numeroDocumento;
 
     @OneToMany(mappedBy = "cliente")

@@ -21,7 +21,7 @@ public class LineaMovilEntity implements Serializable {
     @Column(name = "id_linea_movil")
     private Long idLineaMovil;
 
-    @Column(name = "numero_telefono")
+    @Column(name = "numero_telefono",unique = true)
     private Integer numeroTelefono;
 
     @Column(name = "estado")
@@ -38,10 +38,12 @@ public class LineaMovilEntity implements Serializable {
     @JoinColumn(name = "cliente_id")
     private ClienteEntity cliente;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinTable(
-            name = "linea_oferta",
+            name = "lineas_ofertas",
             joinColumns = @JoinColumn(name = "linea_movil_id"),
-            inverseJoinColumns = @JoinColumn(name = "oferta_id"))
+            inverseJoinColumns = @JoinColumn(name = "oferta_id"),
+            uniqueConstraints = {@UniqueConstraint(columnNames = { "linea_movil_id", "oferta_id" })}
+    )
     private List<OfertaEntity> ofertas;
 }

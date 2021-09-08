@@ -26,13 +26,13 @@ public class SpringFoxConfig {
     }
 
     private ApiInfo getApiInfo() {
-        return new ApiInfo("API para lineas de clientes",
-                "API para lineas de clientes",
+        return new ApiInfo("API para lineas telefonicas de clientes",
+                "API para lineas telefonicas de clientes",
                 "1.0",
                 null,
                 new Contact("Italo", null, "italolazo28@gmail.com"),
-                "LICENSE",
-                "LICENSE URL",
+                null,
+                null,
                 Collections.emptyList());
     }
 }

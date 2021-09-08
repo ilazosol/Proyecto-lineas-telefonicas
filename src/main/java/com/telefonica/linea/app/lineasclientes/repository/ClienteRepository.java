@@ -12,5 +12,5 @@ public interface ClienteRepository extends JpaRepository<ClienteEntity,Long> {
 
     @Query("select c from ClienteEntity c " +
             "where c.tipoDocumento = ?1 and c.numeroDocumento = ?2")
-    List<ClienteEntity> findClientByDocument(String tipo, String numero);
+    ClienteEntity findClientByDocument(String tipo, String numero);
 }

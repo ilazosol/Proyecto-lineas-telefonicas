@@ -1,0 +1,226 @@
+2021-09-08 15:23:37,030 INFO o.s.b.StartupInfoLogger [main] Starting LineasClientesApplication using Java 11.0.12 on Italo-PC with PID 228008 (C:\Users\Italo\Desktop\lineas-clientes\target\classes started by Italo in C:\Users\Italo\Desktop\lineas-clientes)
+2021-09-08 15:23:37,044 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-09-08 15:23:37,046 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-09-08 15:23:38,948 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-08 15:23:39,081 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 105 ms. Found 2 JPA repository interfaces.
+2021-09-08 15:23:40,897 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-09-08 15:23:40,917 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-08 15:23:40,918 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2021-09-08 15:23:40,921 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-08 15:23:41,182 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-09-08 15:23:41,182 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4067 ms
+2021-09-08 15:23:43,271 INFO o.e.s.o.t.o.p.UpfrontAllocatingPageSource [main] Allocating 10.0MB in chunks
+2021-09-08 15:23:43,317 INFO o.e.i.i.s.d.OffHeapDiskStore [main] The index for data file ehcache-disk-store.data is more recent than the data file itself by 3042582ms : this is harmless.
+2021-09-08 15:23:43,361 INFO o.e.c.EhcacheManager [main] Cache 'ofertaCache' created in EhcacheManager.
+2021-09-08 15:23:43,420 INFO o.e.j.Eh107CacheManager [main] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/Italo/Desktop/lineas-clientes/target/classes/ehcache.xml,Cache=ofertaCache
+2021-09-08 15:23:43,429 INFO o.e.j.Eh107CacheManager [main] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/Italo/Desktop/lineas-clientes/target/classes/ehcache.xml,Cache=ofertaCache
+2021-09-08 15:23:43,732 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-08 15:23:43,830 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-08 15:23:44,089 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-08 15:23:44,273 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2021-09-08 15:23:44,898 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-09-08 15:23:44,928 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-09-08 15:23:46,059 DEBUG o.h.e.j.s.SqlStatementLogger [main] alter table linea_oferta drop foreign key FK57cgiff1xmev0hmiik0mmr7dw
+2021-09-08 15:23:46,086 WARN o.h.t.s.i.ExceptionHandlerLoggedImpl [main] GenerationTarget encountered exception accepting command : Error executing DDL "alter table linea_oferta drop foreign key FK57cgiff1xmev0hmiik0mmr7dw" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table linea_oferta drop foreign key FK57cgiff1xmev0hmiik0mmr7dw" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) [spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) [spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) [spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) [spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) [spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) [spring-boot-2.5.4.jar:2.5.4]
+	at com.telefonica.linea.app.lineasclientes.LineasClientesApplication.main(LineasClientesApplication.java:9) [classes/:?]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'db_telefonica_lineas.linea_oferta' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	... 35 more
+2021-09-08 15:23:46,097 DEBUG o.h.e.j.s.SqlStatementLogger [main] alter table linea_oferta drop foreign key FKc35lh4m559e1yelkvd1nxdss8
+2021-09-08 15:23:46,099 WARN o.h.t.s.i.ExceptionHandlerLoggedImpl [main] GenerationTarget encountered exception accepting command : Error executing DDL "alter table linea_oferta drop foreign key FKc35lh4m559e1yelkvd1nxdss8" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table linea_oferta drop foreign key FKc35lh4m559e1yelkvd1nxdss8" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) [spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) [spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) [spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) [spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) [spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) [spring-boot-2.5.4.jar:2.5.4]
+	at com.telefonica.linea.app.lineasclientes.LineasClientesApplication.main(LineasClientesApplication.java:9) [classes/:?]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'db_telefonica_lineas.linea_oferta' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	... 35 more
+2021-09-08 15:23:46,101 DEBUG o.h.e.j.s.SqlStatementLogger [main] alter table lineas_moviles drop foreign key FKt6v2b53prbyn2tfmhisq31esw
+2021-09-08 15:23:46,103 WARN o.h.t.s.i.ExceptionHandlerLoggedImpl [main] GenerationTarget encountered exception accepting command : Error executing DDL "alter table lineas_moviles drop foreign key FKt6v2b53prbyn2tfmhisq31esw" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table lineas_moviles drop foreign key FKt6v2b53prbyn2tfmhisq31esw" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) [spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) [spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) [spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) [spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) [spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) [spring-boot-2.5.4.jar:2.5.4]
+	at com.telefonica.linea.app.lineasclientes.LineasClientesApplication.main(LineasClientesApplication.java:9) [classes/:?]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'db_telefonica_lineas.lineas_moviles' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	... 35 more
+2021-09-08 15:23:46,105 DEBUG o.h.e.j.s.SqlStatementLogger [main] drop table if exists clientes
+2021-09-08 15:23:46,117 DEBUG o.h.e.j.s.SqlStatementLogger [main] drop table if exists linea_oferta
+2021-09-08 15:23:46,120 DEBUG o.h.e.j.s.SqlStatementLogger [main] drop table if exists lineas_moviles
+2021-09-08 15:23:46,122 DEBUG o.h.e.j.s.SqlStatementLogger [main] drop table if exists ofertas
+2021-09-08 15:23:46,128 DEBUG o.h.e.j.s.SqlStatementLogger [main] create table clientes (id_cliente bigint not null auto_increment, apellido_materno varchar(255), apellido_paterno varchar(255), nombre varchar(255), numero_documento varchar(255), tipo_documento varchar(255), primary key (id_cliente)) engine=InnoDB
+2021-09-08 15:23:46,363 DEBUG o.h.e.j.s.SqlStatementLogger [main] create table linea_oferta (linea_movil_id bigint not null, oferta_id bigint not null) engine=InnoDB
+2021-09-08 15:23:46,629 DEBUG o.h.e.j.s.SqlStatementLogger [main] create table lineas_moviles (id_linea_movil bigint not null auto_increment, estado varchar(255), nombre_plan varchar(255), numero_telefono integer, tipo_linea varchar(255), cliente_id bigint, primary key (id_linea_movil)) engine=InnoDB
+2021-09-08 15:23:46,813 DEBUG o.h.e.j.s.SqlStatementLogger [main] create table ofertas (id_oferta bigint not null auto_increment, descripcion varchar(200), fecha_fin datetime(6), fecha_inicio datetime(6), primary key (id_oferta)) engine=InnoDB
+2021-09-08 15:23:47,093 DEBUG o.h.e.j.s.SqlStatementLogger [main] alter table linea_oferta add constraint FK57cgiff1xmev0hmiik0mmr7dw foreign key (oferta_id) references ofertas (id_oferta)
+2021-09-08 15:23:47,863 DEBUG o.h.e.j.s.SqlStatementLogger [main] alter table linea_oferta add constraint FKc35lh4m559e1yelkvd1nxdss8 foreign key (linea_movil_id) references lineas_moviles (id_linea_movil)
+2021-09-08 15:23:48,405 DEBUG o.h.e.j.s.SqlStatementLogger [main] alter table lineas_moviles add constraint FKt6v2b53prbyn2tfmhisq31esw foreign key (cliente_id) references clientes (id_cliente)
+2021-09-08 15:23:48,957 INFO o.h.t.s.i.e.AbstractScriptSourceInput [main] HHH000476: Executing import script 'file:/C:/Users/Italo/Desktop/lineas-clientes/target/classes/import.sql'
+2021-09-08 15:23:48,958 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into clientes(apellido_paterno,apellido_materno ,nombre,tipo_documento,numero_documento ) values ("Perez","Sanchez","Pedro","DNI","75432154")
+2021-09-08 15:23:48,996 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into clientes(apellido_paterno,apellido_materno ,nombre,tipo_documento,numero_documento ) values ("Rondon","Martinez","Maria","DNI","23454345")
+2021-09-08 15:23:49,018 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into clientes(apellido_paterno,apellido_materno ,nombre,tipo_documento,numero_documento ) values ("Lira","Godoya","Luna","DNI","34567845")
+2021-09-08 15:23:49,059 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into lineas_moviles(estado,nombre_plan,numero_telefono,tipo_linea,cliente_id) values ("Activo","Plan Prepago",912356489,"Prepago",1)
+2021-09-08 15:23:49,101 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into lineas_moviles(estado,nombre_plan,numero_telefono,tipo_linea,cliente_id) values ("Cancelado","Plan S/ 29.90",928374829,"Postpago",1)
+2021-09-08 15:23:49,130 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into lineas_moviles(estado,nombre_plan,numero_telefono,tipo_linea,cliente_id) values ("Activo","Plan S/. 39.90",983728376,"Postpago",1)
+2021-09-08 15:23:49,238 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into lineas_moviles(estado,nombre_plan,numero_telefono,tipo_linea,cliente_id) values ("Activo","Plan S/. 49.90",965726387,"Postpago",2)
+2021-09-08 15:23:49,286 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into lineas_moviles(estado,nombre_plan,numero_telefono,tipo_linea,cliente_id) values ("Cancelado","Plan Prepago",912356489,"Prepago",2)
+2021-09-08 15:23:49,321 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into lineas_moviles(estado,nombre_plan,numero_telefono,tipo_linea,cliente_id) values ("Activo","Plan S/. 49.90",974637485,"Postpago",1)
+2021-09-08 15:23:49,341 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into ofertas(descripcion,fecha_inicio,fecha_fin) values ("Oferta de 5 meses de 10 soles","2021-01-05","2021-06-05")
+2021-09-08 15:23:49,363 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into ofertas(descripcion,fecha_inicio,fecha_fin) values ("Oferta de 6 meses de 5 soles","2021-03-15","2021-09-15")
+2021-09-08 15:23:49,382 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into ofertas(descripcion,fecha_inicio,fecha_fin) values ("Oferta de 4 meses de 20 soles","2021-08-10","2021-11-10")
+2021-09-08 15:23:49,405 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into ofertas(descripcion,fecha_inicio,fecha_fin) values ("Oferta de 2 meses de 40 soles","2021-05-13","2021-07-13")
+2021-09-08 15:23:49,424 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into ofertas(descripcion,fecha_inicio,fecha_fin) values ("Oferta de 1 meses de 50 soles","2021-09-02","2021-10-02")
+2021-09-08 15:23:49,447 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into ofertas(descripcion,fecha_inicio,fecha_fin) values ("Oferta de 1 meses de 50 soles","2021-06-02","2021-07-02")
+2021-09-08 15:23:49,467 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into ofertas(descripcion,fecha_inicio,fecha_fin) values ("Oferta de 1 meses de 20 soles","2021-04-01","2021-04-29")
+2021-09-08 15:23:49,489 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into ofertas(descripcion,fecha_inicio,fecha_fin) values ("Oferta de 2 meses de 20 soles","2021-05-01","2021-07-29")
+2021-09-08 15:23:49,509 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into ofertas(descripcion,fecha_inicio,fecha_fin) values ("Oferta de 3 meses de 45 soles","2021-08-25","2021-11-25")
+2021-09-08 15:23:49,530 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into ofertas(descripcion,fecha_inicio,fecha_fin) values ("Oferta de 2 meses de 35 soles","2021-09-12","2021-11-12")
+2021-09-08 15:23:49,551 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into linea_oferta values (1,1)
+2021-09-08 15:23:49,572 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into linea_oferta values (1,2)
+2021-09-08 15:23:49,592 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into linea_oferta values (1,3)
+2021-09-08 15:23:49,654 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into linea_oferta values (1,4)
+2021-09-08 15:23:49,675 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into linea_oferta values (2,5)
+2021-09-08 15:23:49,696 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into linea_oferta values (3,3)
+2021-09-08 15:23:49,717 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into linea_oferta values (4,6)
+2021-09-08 15:23:49,754 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into linea_oferta values (5,7)
+2021-09-08 15:23:49,776 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into linea_oferta values (6,5)
+2021-09-08 15:23:49,796 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into linea_oferta values (1,9)
+2021-09-08 15:23:49,817 DEBUG o.h.e.j.s.SqlStatementLogger [main] insert into linea_oferta values (1,10)
+2021-09-08 15:23:49,839 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-08 15:23:49,852 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-08 15:23:51,426 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-08 15:23:52,209 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-09-08 15:23:52,247 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-08 15:23:52,655 INFO o.s.b.StartupInfoLogger [main] Started LineasClientesApplication in 16.955 seconds (JVM running for 18.968)
+2021-09-08 15:25:39,028 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-08 15:25:39,029 INFO o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-09-08 15:25:39,030 DEBUG o.h.e.j.s.SqlStatementLogger [SpringApplicationShutdownHook] alter table linea_oferta drop foreign key FK57cgiff1xmev0hmiik0mmr7dw
+2021-09-08 15:25:39,113 DEBUG o.h.e.j.s.SqlStatementLogger [SpringApplicationShutdownHook] alter table linea_oferta drop foreign key FKc35lh4m559e1yelkvd1nxdss8
+2021-09-08 15:25:39,270 DEBUG o.h.e.j.s.SqlStatementLogger [SpringApplicationShutdownHook] alter table lineas_moviles drop foreign key FKt6v2b53prbyn2tfmhisq31esw
+2021-09-08 15:25:39,345 DEBUG o.h.e.j.s.SqlStatementLogger [SpringApplicationShutdownHook] drop table if exists clientes
+2021-09-08 15:25:39,472 DEBUG o.h.e.j.s.SqlStatementLogger [SpringApplicationShutdownHook] drop table if exists linea_oferta
+2021-09-08 15:25:39,563 DEBUG o.h.e.j.s.SqlStatementLogger [SpringApplicationShutdownHook] drop table if exists lineas_moviles
+2021-09-08 15:25:39,735 DEBUG o.h.e.j.s.SqlStatementLogger [SpringApplicationShutdownHook] drop table if exists ofertas
+2021-09-08 15:25:39,867 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-09-08 15:25:39,886 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-09-08 15:25:40,024 INFO o.e.c.EhcacheManager [SpringApplicationShutdownHook] Cache 'ofertaCache' removed from EhcacheManager.
