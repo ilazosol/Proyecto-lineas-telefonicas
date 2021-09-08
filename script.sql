@@ -1,3 +1,5 @@
+CREATE DATABASE db_telefonica_lineas;
+
 //Spring autogenera las entidades y actualmente esta el ddl como create - drop, aca he colocado los scripts necesarios para realizar las pruebas con los metodos handler.
 
 insert into clientes(apellido_paterno,apellido_materno ,nombre,tipo_documento,numero_documento ) values ("Perez","Sanchez","Pedro","DNI","75432154");
